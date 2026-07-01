@@ -1,0 +1,262 @@
+/* ===================================
+   MO's Area - Cart Page CSS
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#6c63ff;
+    font-size:30px;
+}
+
+.logo h2{
+    color:#6c63ff;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar .active{
+    color:#6c63ff;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:35vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* ================= CART TABLE ================= */
+
+.cart-container{
+    padding:60px 8%;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+th{
+    background:#6c63ff;
+    color:#fff;
+    padding:18px;
+}
+
+td{
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid #eee;
+}
+
+.qty{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#6c63ff;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    margin:0 8px;
+}
+
+.quantity{
+    font-weight:600;
+    font-size:18px;
+}
+
+.remove{
+    border:none;
+    background:#ef4444;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.remove:hover{
+    background:#dc2626;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary{
+    display:flex;
+    justify-content:flex-end;
+    padding:0 8% 80px;
+}
+
+.summary-card{
+    width:350px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.summary-card h2{
+    color:#6c63ff;
+    margin-bottom:20px;
+}
+
+.summary-card p,
+.summary-card h3{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.summary-card hr{
+    margin:20px 0;
+}
+
+.summary-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#6c63ff;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.summary-card button:hover{
+    background:#5148d8;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .summary{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    table{
+        min-width:700px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .hero{
+        height:28vh;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .cart-container,
+    .summary{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+}

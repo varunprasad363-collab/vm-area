@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | MO's Area</title>
+
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-store"></i>
+
+                <h2>MO's Area</h2>
+
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="cart.html" class="active">Cart</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <h1>Your Shopping Cart</h1>
+
+        <p>Review your selected items before checkout.</p>
+
+    </section>
+
+    <!-- ================= CART TABLE ================= -->
+
+    <section class="cart-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>MacBook Air</td>
+
+                    <td>₹84,999</td>
+
+                    <td>
+
+                        <button class="qty minus">-</button>
+
+                        <span class="quantity">1</span>
+
+                        <button class="qty plus">+</button>
+
+                    </td>
+
+                    <td class="price">₹84,999</td>
+
+                    <td>
+
+                        <button class="remove">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Headphones</td>
+
+                    <td>₹12,999</td>
+
+                    <td>
+
+                        <button class="qty minus">-</button>
+
+                        <span class="quantity">1</span>
+
+                        <button class="qty plus">+</button>
+
+                    </td>
+
+                    <td class="price">₹12,999</td>
+
+                    <td>
+
+                        <button class="remove">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section class="summary">
+
+        <div class="summary-card">
+
+            <h2>Order Summary</h2>
+
+            <p>Subtotal <span>₹97,998</span></p>
+
+            <p>Shipping <span>Free</span></p>
+
+            <hr>
+
+            <h3>Total <span>₹97,998</span></h3>
+
+            <button id="checkoutBtn">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>MO's Area</h2>
+
+        <p>Where Style Meets Innovation</p>
+
+        <p>© 2026 MO's Area. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

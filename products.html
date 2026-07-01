@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MO's Area | Products</title>
+
+    <link rel="stylesheet" href="css/products.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h2>MO's Area</h2>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="cart.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner">
+
+        <h1>Explore Our Collection</h1>
+
+        <p>Premium Products • Best Prices • Fast Delivery</p>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <input type="text" id="searchInput" placeholder="Search Products...">
+
+    </section>
+
+    <!-- Category Buttons -->
+
+    <section class="filter-buttons">
+
+        <button onclick="filterProducts('all')">All</button>
+
+        <button onclick="filterProducts('electronics')">Electronics</button>
+
+        <button onclick="filterProducts('fashion')">Fashion</button>
+
+        <button onclick="filterProducts('home')">Home</button>
+
+    </section>
+
+    <!-- Products -->
+
+    <section class="products">
+
+        <div class="product-grid">
+
+            <div class="card electronics">
+
+                <img src="https://picsum.photos/400/300?random=1" alt="MacBook Air">
+
+                <h3>MacBook Air</h3>
+
+                <p>₹84,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card electronics">
+
+                <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500">
+
+                <h3>iPhone 16</h3>
+
+                <p>₹79,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card electronics">
+
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+
+                <h3>Headphones</h3>
+
+                <p>₹12,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card electronics">
+
+                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500">
+
+                <h3>Smart Watch</h3>
+
+                <p>₹9,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card fashion">
+
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500">
+
+                <h3>Nike Shoes</h3>
+
+                <p>₹5,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card fashion">
+
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500">
+
+                <h3>T-Shirt</h3>
+
+                <p>₹999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card fashion">
+
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500">
+
+                <h3>Women's Jacket</h3>
+
+                <p>₹2,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card fashion">
+
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500">
+
+                <h3>Hand Bag</h3>
+
+                <p>₹1,799</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card home">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500">
+
+                <h3>Sofa</h3>
+
+                <p>₹24,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card home">
+
+                <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=500">
+
+                <h3>Dining Table</h3>
+
+                <p>₹18,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card home">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500">
+
+                <h3>Wooden Chair</h3>
+
+                <p>₹3,999</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+            <div class="card home">
+
+                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500">
+
+                <h3>Study Lamp</h3>
+
+                <p>₹1,499</p>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 MO's Area | Discover. Shop. Inspire.</p>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
